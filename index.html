@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturent Website Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden max-w-[1920px]">
+    <!-- header area start -->
+    <div class="container mx-auto xl:px-[310px] px-5">
+      <header class="flex oswald">
+        <!-- logo area start -->
+        <a class="flex my-[15px] mr-[122px]" href="#">
+          <img class="w-[119.54px] h-[67px]" src="images/logo.png" alt="" />
+          <span class="text-[#EE3A43] text-2xl fugaz my-auto font-normal"
+            >pizza hut</span
+          >
+        </a>
+        <!-- logo area start -->
+        <!-- <nav class="flex">
+          <ul class="flex mr-[152px] xl:pt-[28px]">
+            <li class="mr-[23.9px] text-[18px]"><a href="#"> Home</a></li>
+            <li class="mr-[23.9px] text-[18px]"><a href="#"> About Us </a></li>
+            <li class="mr-[23.9px] text-[18px]"><a href="#">Shop </a></li>
+            <li class="mr-[23.9px] text-[18px]"><a href="#">Blog</a></li>
+            <li class="mr-[23.9px] text-[18px]"><a href="#"> Pages </a></li>
+            <li class="text-[18px]"><a href="#"> Contact </a></li>
+          </ul>
+          <div class="py-5 flex">
+            <img
+              class="w-[19.13px] h-7 my-auto mr-[14.5px]"
+              src="images/nav-img.png"
+              alt=""
+            />
+            <button class="bg-[#FFC222] w-[118.91px] h-[57px] rounded-[7px]">
+              Contact Us
+            </button>
+            <img
+              class="w-[31px] h-[18px] my-auto ml-[25px]"
+              src="images/menubar.png"
+              alt=""
+            />
+          </div>
+        </nav> -->
+      </header>
+    </div>
+    <!-- header area end -->
+    <!-- banner area start -->
+    <div
+      class="bg-[url(/images/banner-img.jpg)] xl:h-[710px] bg-cover bg-no-repeat text-white relative"
+    >
+      <div class="container mx-auto xl:pl-[355px] xl:px-0 px-5 xl:pt-[210px]">
+        <div class="xl:h-[355px] xl:w-[615px]">
+          <h1 class="xl:text-6xl text-4xl xl:!leading-[75px]">
+            The Perfect Space to Enjoy Fantastic Food
+          </h1>
+          <p class="text-xl leading-[25px] py-[30px]">
+            Festive dining at Farthings where we are strong believers in <br />
+            using the very best produce
+          </p>
+          <div class="flex items-center">
+            <div class="relative">
+              <button
+                class="bg-[#F3274C] text-[18px] rounded-xl w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300 mr-[45px] hover:mr-[38.2px]"
+              >
+                See Our Menus
+                <a
+                  href="#"
+                  class="absolute border-[3px] z-0 rounded-xl border-[#F3274C] w-[180.41px] h-[68.19px] left-[16.5px] right-0 -top-[6px]"
+                ></a>
+              </button>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="border-white border-[3px] w-[76px] h-[75px] rounded-full"
+              onclick="my_modal_5.showModal()"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">
+                  Press ESC key or click the button below to close
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <a class="ml-[45px]" href="#">Vedio</a>
+          </div>
+        </div>
+        <div>
+          <div class="absolute right-[351px] bottom-[220px] z-20">
+            <p
+              class="bg-[#F3274C] flex w-[125px] h-[26.33px] rounded-[5px] text-[14px] font-semibold items-center justify-center"
+            >
+              Weekly Special
+            </p>
+          </div>
+          <div
+            class="absolute top-[474px] right-[310px] border-[3px] border-[#FFD40D] rounded-[30px] w-[399.22px] h-[192px]"
+          >
+            <div class="py-[21px] px-7 flex justify-between">
+              <div class="my-auto">
+                <p class="text-[28px]">
+                  <span class="text-[#F3274C] pb-1">$</span>90.85
+                </p>
+                <h6 class="text-[22px]">Sicilian Pizza</h6>
+                <div class="text-[#FFD40D] pt-[6.33px]">
+                  <i class="fa-solid fa-star text-[15px]"></i>
+                  <i class="fa-solid fa-star text-[15px]"></i>
+                  <i class="fa-solid fa-star text-[15px]"></i>
+                  <i class="fa-solid fa-star text-[15px]"></i>
+                  <i class="fa-solid fa-star text-[15px]"></i>
+                </div>
+              </div>
+              <img src="images/banner-img2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner area end -->
+    <!-- about area start -->
+    <div class="container mx-auto xl:px-[295px] px-5 xl:pt-[120px] pt-10">
+      <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-x-[180px]">
+        <div class="">
+          <p class="text-[18px] text-[#F3274C]">About The Food Restaurant</p>
+          <h2 class="xl:text-6xl text-3xl xl:!leading-[72px]">
+            New Ground with Dishes to be Enjoyed
+          </h2>
+        </div>
+        <div class="">
+          <p>
+            Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci
+            varius nat oque pena tibus et urient monte nascete ridiculus mus
+            nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan
+            ligula.
+          </p>
+          <div class="pt-[30px] flex">
+            <img
+              class="w-20 h-20 rounded-[50px]"
+              src="images/woman1.jpg"
+              alt=""
+            />
+            <div class="ml-5">
+              <h6 class="text-3xl">Willimes James</h6>
+              <p class="pt-1">Director and Chief Operations Officer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="grid xl:grid-cols-3 grid-cols-1 pt-5 xl:w-[1330px]">
+          <div class="relative">
+            <span
+              class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
+            >
+            </span>
+            <img
+              class="w-[413.33px] h-[524.22px]"
+              src="images/about2.png"
+              alt=""
+            />
+            <div
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+            >
+              <button
+                class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
+              >
+                Resturent
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <span
+              class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
+            >
+            </span>
+            <img
+              class="w-[413.33px] h-[524.22px]"
+              src="images/about3.png"
+              alt=""
+            />
+            <div
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+            >
+              <button
+                class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
+              >
+                Coctail Bar
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <span
+              class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
+            >
+            </span>
+            <img
+              class="w-[413.33px] h-[524.22px]"
+              src="images/about4.png"
+              alt=""
+            />
+            <div
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+            >
+              <button
+                class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
+              >
+                Private Dining
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about area end -->
+    <!-- Discover Menu area start -->
+    <div class="container mx-auto pt-[34.99px]">
+      <div class="text-center pb-[90px]">
+        <h2 class="text-6xl">Discover Menu</h2>
+        <div
+          class="border-b-[10px] mt-[9px] border-[#FFD40D] w-[270px] mx-auto"
+        ></div>
+      </div>
+    </div>
+    <!-- Discover Menu area end -->
+  </body>
+</html>
