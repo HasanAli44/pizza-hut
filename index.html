@@ -73,11 +73,13 @@
     <!-- header area end -->
     <!-- banner area start -->
     <div
-      class="bg-[url(./images/banner-img.jpg)] xl:h-[710px] bg-cover bg-no-repeat text-white relative"
+      class="bg-[url(./images/banner-img.jpg)] xl:h-[710px] h-screen bg-cover bg-no-repeat text-white relative"
     >
-      <div class="container mx-auto xl:pl-[355px] xl:px-0 px-5 xl:pt-[210px]">
+      <div
+        class="mx-auto xl:pl-[355px] xl:px-0 px-5 xl:pt-[210px] pt-16 xl:text-left md:text-center"
+      >
         <div class="xl:h-[355px] xl:w-[615px]">
-          <h1 class="xl:text-6xl text-4xl xl:!leading-[75px]">
+          <h1 class="xl:text-6xl md:text-5xl text-4xl xl:!leading-[75px]">
             The Perfect Space to Enjoy Fantastic Food
           </h1>
           <p class="text-xl leading-[25px] py-[30px]">
@@ -85,7 +87,7 @@
             using the very best produce
           </p>
           <div class="flex items-center">
-            <div class="relative">
+            <div class="relative xl:ml-0 md:ml-40">
               <button
                 class="bg-[#F3274C] text-[18px] rounded-xl w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300 mr-[45px] hover:mr-[38.2px]"
               >
@@ -120,7 +122,7 @@
             <a class="ml-[45px]" href="#">Vedio</a>
           </div>
         </div>
-        <div>
+        <div class="xl:block hidden">
           <div class="absolute right-[351px] bottom-[220px] z-20">
             <p
               class="bg-[#F3274C] flex w-[125px] h-[26.33px] rounded-[5px] text-[14px] font-semibold items-center justify-center"
@@ -153,9 +155,11 @@
     </div>
     <!-- banner area end -->
     <!-- about area start -->
-    <div class="container mx-auto xl:px-[295px] px-5 xl:pt-[120px] pt-10">
-      <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-x-[180px]">
-        <div class="">
+    <div class="xl:max-w-[1330px] mx-auto px-5 xl:pt-[120px] pt-10">
+      <div
+        class="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:gap-x-[180px]"
+      >
+        <div class="xl:pr-0 md:pr-10">
           <p class="text-[18px] text-[#F3274C]">About The Food Restaurant</p>
           <h2 class="xl:text-6xl text-3xl xl:!leading-[72px]">
             New Ground with Dishes to be Enjoyed
@@ -182,8 +186,8 @@
         </div>
       </div>
       <div class="">
-        <div class="grid xl:grid-cols-3 grid-cols-1 pt-5 xl:w-[1330px]">
-          <div class="relative">
+        <div class="grid xl:grid-cols-3 grid-cols-1 gap-x-[30px] pt-5">
+          <div class="relative md:mx-auto">
             <span
               class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
             >
@@ -203,7 +207,7 @@
               </button>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative my-[65px] md:mx-auto">
             <span
               class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
             >
@@ -223,7 +227,7 @@
               </button>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative md:mx-auto">
             <span
               class="border-[5px] border-[#FFD40D] xl:w-[383.33px] md:w-[383.33px] w-[370px] xl:m-[15px] md:m-[15px] m-2 h-[494.22px] rounded-[30px] absolute top-0 left-0"
             >
@@ -248,14 +252,120 @@
     </div>
     <!-- about area end -->
     <!-- Discover Menu area start -->
-    <div class="container mx-auto pt-[34.99px]">
+    <div class="xl:max-w-[1330px] mx-auto xl:px-0 px-5 pt-[34.99px]">
       <div class="text-center pb-[90px]">
-        <h2 class="text-6xl">Discover Menu</h2>
+        <h2 class="xl:text-6xl text-4xl">Discover Menu</h2>
         <div
           class="border-b-[10px] mt-[9px] border-[#FFD40D] w-[270px] mx-auto"
         ></div>
       </div>
+      <div class="grid xl:grid-cols-2 grid-cols-1 gap-x-[30px]">
+        <div class="relative text-white xl:mb-0 mb-16 md:mx-auto">
+          <img src="images/menu-img1.png" alt="" />
+          <div class="absolute top-[55px] left-[50px]">
+            <h4 class="text-[50px]">Cocktails</h4>
+            <p class="pt-2">canonical classics to obscure tiki drinks</p>
+          </div>
+          <div
+            class="bg-[#FFD40D] xl:w-[140px] md:w-[140px] w-[100px] xl:h-[140px] md:h-[140px] h-[100px] rounded-full absolute xl:top-[225px] md:top-[225px] top-40 left-[50px]"
+          >
+            <div class="text-center xl:pt-11 md:pt-11 pt-3">
+              <p class="text-[32px] text-[#F3274C]">$120</p>
+              <p class="text-black">person</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative text-white md:mx-auto">
+          <img src="images/menu-img2.png" alt="" />
+          <div class="absolute top-[55px] left-[50px]">
+            <h4 class="text-[50px]">Steaks & BBQ</h4>
+            <p class="pt-2">canonical classics to obscure tiki drinks</p>
+          </div>
+          <div
+            class="bg-[#FFD40D] xl:w-[140px] md:w-[140px] w-[100px] xl:h-[140px] md:h-[140px] h-[100px] rounded-full absolute xl:top-[225px] md:top-[225px] top-40 left-[50px]"
+          >
+            <div class="text-center xl:pt-11 md:pt-11 pt-3">
+              <p class="text-[32px] text-[#F3274C]">$120</p>
+              <p class="text-black">person</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Discover Menu area end -->
+    <!-- reserve table start -->
+    <div
+      class="mt-[140px] xl:max-w-[1300px] w-full text-white xl:h-[375px] mx-auto bg-[url(./images/reserve-table-img.jpg)] rounded-[30px]"
+    >
+      <div class="xl:px-[60px] px-5 xl:pt-[70px] pt-5 xl:flex">
+        <div class="xl:w-[373.33px] mr-[30px]">
+          <h4 class="xl:text-[50px] text-4xl uppercase leading-[50px]">
+            Reserve a Table
+          </h4>
+          <div
+            class="border-b-[3px] border-[#FFD40D] mt-[9px] xl:w-[211px] w-[300px]"
+          ></div>
+          <p class="text-[18px] pt-[29px]">Discover our New Menu !</p>
+        </div>
+        <div class="xl:w-[776.66px] xl:pt-0 pt-6">
+          <div class="xl:flex md:flex">
+            <input
+              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mr-[30px] text-black xl:mb-0 mb-[30px]"
+              type="text"
+              name="text"
+              id=""
+              placeholder="No of Guest"
+            />
+
+            <input
+              type="text"
+              class="input xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] text-black xl:mb-0 mb-[30px]"
+              placeholder="Date"
+            />
+            <div class="xl:ml-[30px] md:ml-[30px]">
+              <input
+                class="xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
+                type="text"
+                name="text"
+                id=""
+                placeholder="Time"
+              />
+            </div>
+          </div>
+          <div class="xl:flex md:flex xl:pt-[30px] md:pt-0 pt-[30px]">
+            <input
+              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mb-[30px] xl:mb-0 mr-[30px] text-black"
+              type="text"
+              name="text"
+              id=""
+              placeholder="Full Name"
+            />
+            <input
+              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
+              type="text"
+              name="text"
+              id=""
+              placeholder="Phone No"
+            />
+          </div>
+          <div class="pt-[30px] xl:ml-[580px] xl:mb-0 xl:pb-0 pb-10">
+            <div class="relative">
+              <button
+                class="bg-[#FFD40D] text-[18px] rounded-xl w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300"
+              >
+                See Our Menus
+                <a
+                  href="#"
+                  class="absolute border-[3px] z-0 rounded-xl border-[#FFD40D] w-[180.41px] h-[68.19px] left-[16.5px] right-0 -top-[6px]"
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reserve table end -->
+    <!-- Featured Dishes area start-->
+    <!-- Featured Dishes area end-->
   </body>
 </html>
