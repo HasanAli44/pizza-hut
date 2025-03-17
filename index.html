@@ -29,6 +29,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="overflow-x-hidden max-w-[1920px]">
@@ -76,7 +86,7 @@
       class="bg-[url(./images/banner-img.jpg)] xl:h-[710px] h-screen bg-cover bg-no-repeat text-white relative"
     >
       <div
-        class="mx-auto xl:pl-[355px] xl:px-0 px-5 xl:pt-[210px] pt-16 xl:text-left md:text-center"
+        class="mx-auto xl:px-0 px-5 xl:pt-[210px] pt-16 xl:text-left md:text-center xl:w-[1330px]"
       >
         <div class="xl:h-[355px] xl:w-[615px]">
           <h1 class="xl:text-6xl md:text-5xl text-4xl xl:!leading-[75px]">
@@ -198,7 +208,7 @@
               alt=""
             />
             <div
-              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20px] md:left-[20px] left-[13.1px]"
             >
               <button
                 class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
@@ -218,7 +228,7 @@
               alt=""
             />
             <div
-              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20px] md:left-[20px] left-[13.1px]"
             >
               <button
                 class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
@@ -238,7 +248,7 @@
               alt=""
             />
             <div
-              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20.5px] md:left-[20px] left-[13.1px]"
+              class="absolute xl:top-[438.22px] md:top-[438.22px] top-[432px] xl:left-[20px] md:left-[20px] left-[13.1px]"
             >
               <button
                 class="bg-[#FFD40D] text-3xl xl:w-[373.33px] md:w-[373.33px] w-[362px] h-[67px] rounded-[20px]"
@@ -251,8 +261,177 @@
       </div>
     </div>
     <!-- about area end -->
+    <!-- tabs area start -->
+
+    <div class="xl:w-[1300px] mx-auto" id="tabs">
+      <ul class="border-none bg-transparent">
+        <li class="rounded-[18px]">
+          <a
+            class="active:bg-[#F3274C] focus:bg-[#F3274C] bg-transparent border-none text-[22px]"
+            href="#tabs-1"
+          >
+            <img
+              class="xl:w-[69px] xl:h-[70px] mb-[14px]"
+              src="images/tab-1.png"
+              alt=""
+            />
+            Dessert</a
+          >
+        </li>
+        <li><a href="#tabs-2">Proin dolor</a></li>
+        <li><a href="#tabs-3">Aenean lacinia</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div class="xl:flex">
+          <img class="w-[620px] h-[538px]" src="images/dish1.png" alt="" />
+          <div class="absolute xl:pl-[660px] my-auto">
+            <h3 class="text-4xl pb-[22px]">BBQ</h3>
+            <div class="border-b-2 border-dotted border-black pb-5">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Sake BBQ sauce</h5>
+                <p class="xl:pl-[316px] pl-[150px] text-[#F3274C] text-[22px]">
+                  $9.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                radish, black sesame seeds, coriander
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">BBQ baby back ribs</h5>
+                <p class="xl:pl-[275px] pl-[120px] text-[#F3274C] text-[22px]">
+                  $16.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                sticky Asian glaze, charred lime, chilli cashews
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Half smoked chicken</h5>
+                <p class="xl:pl-[275px] pl-[120px] text-[#F3274C] text-[22px]">
+                  $34.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                miso butter glaze, charred lime wedge, sake bbq
+              </p>
+            </div>
+            <div class="mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Dusted chicken wings</h5>
+                <p class="xl:pl-[275px] pl-[120px] text-[#F3274C] text-[22px]">
+                  $40.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                tossed in Korean hot sauce, pickled radish
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tabs-2">
+        <div class="xl:flex">
+          <img class="w-[620px] h-[538px]" src="images/dish2.png" alt="" />
+          <div class="absolute xl:pl-[660px] my-auto">
+            <h3 class="text-4xl pb-[22px]">BBQ</h3>
+            <div class="border-b-2 border-dotted border-black pb-5">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Sake BBQ sauce</h5>
+                <p class="xl:pl-[316px] pl-[150px] text-[#F3274C] text-[22px]">
+                  $9.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                radish, black sesame seeds, coriander
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">BBQ baby back ribs</h5>
+                <p class="xl:pl-[275px] pl-[120px] text-[#F3274C] text-[22px]">
+                  $16.00
+                </p>
+              </div>
+              <p class="text-[#555555]">
+                sticky Asian glaze, charred lime, chilli cashews
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Half smoked chicken</h5>
+                <p class="pl-[275px] text-[#F3274C] text-[22px]">$34.00</p>
+              </div>
+              <p class="text-[#555555]">
+                miso butter glaze, charred lime wedge, sake bbq
+              </p>
+            </div>
+            <div class="mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Dusted chicken wings</h5>
+                <p class="pl-[275px] text-[#F3274C] text-[22px]">$40.00</p>
+              </div>
+              <p class="text-[#555555]">
+                tossed in Korean hot sauce, pickled radish
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tabs-3">
+        <div class="xl:flex">
+          <img class="w-[620px] h-[538px]" src="images/dish3.png" alt="" />
+          <div class="absolute xl:pl-[660px] my-auto">
+            <h3 class="text-4xl pb-[22px]">BBQ</h3>
+            <div class="border-b-2 border-dotted border-black pb-5">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Sake BBQ sauce</h5>
+                <p class="pl-[316px] text-[#F3274C] text-[22px]">$9.00</p>
+              </div>
+              <p class="text-[#555555]">
+                radish, black sesame seeds, coriander
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">BBQ baby back ribs</h5>
+                <p class="pl-[275px] text-[#F3274C] text-[22px]">$16.00</p>
+              </div>
+              <p class="text-[#555555]">
+                sticky Asian glaze, charred lime, chilli cashews
+              </p>
+            </div>
+            <div class="border-b-2 border-dotted border-black pb-5 mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Half smoked chicken</h5>
+                <p class="pl-[275px] text-[#F3274C] text-[22px]">$34.00</p>
+              </div>
+              <p class="text-[#555555]">
+                miso butter glaze, charred lime wedge, sake bbq
+              </p>
+            </div>
+            <div class="mt-3">
+              <div class="flex">
+                <h5 class="text-[22px] pb-[6px]">Dusted chicken wings</h5>
+                <p class="pl-[275px] text-[#F3274C] text-[22px]">$40.00</p>
+              </div>
+              <p class="text-[#555555]">
+                tossed in Korean hot sauce, pickled radish
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tabs area end -->
     <!-- Discover Menu area start -->
-    <div class="xl:max-w-[1330px] mx-auto xl:px-0 px-5 pt-[34.99px]">
+    <div
+      class="xl:max-w-[1330px] mx-auto xl:px-0 px-5 xl:pt-[34.99px] pt-[750px] xl:pb-[290px] pb-20"
+    >
       <div class="text-center pb-[90px]">
         <h2 class="xl:text-6xl text-4xl">Discover Menu</h2>
         <div
@@ -293,79 +472,667 @@
       </div>
     </div>
     <!-- Discover Menu area end -->
-    <!-- reserve table start -->
-    <div
-      class="mt-[140px] xl:max-w-[1300px] w-full text-white xl:h-[375px] mx-auto bg-[url(./images/reserve-table-img.jpg)] rounded-[30px]"
-    >
-      <div class="xl:px-[60px] px-5 xl:pt-[70px] pt-5 xl:flex">
-        <div class="xl:w-[373.33px] mr-[30px]">
-          <h4 class="xl:text-[50px] text-4xl uppercase leading-[50px]">
-            Reserve a Table
-          </h4>
-          <div
-            class="border-b-[3px] border-[#FFD40D] mt-[9px] xl:w-[211px] w-[300px]"
-          ></div>
-          <p class="text-[18px] pt-[29px]">Discover our New Menu !</p>
-        </div>
-        <div class="xl:w-[776.66px] xl:pt-0 pt-6">
-          <div class="xl:flex md:flex">
-            <input
-              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mr-[30px] text-black xl:mb-0 mb-[30px]"
-              type="text"
-              name="text"
-              id=""
-              placeholder="No of Guest"
-            />
 
-            <input
-              type="text"
-              class="input xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] text-black xl:mb-0 mb-[30px]"
-              placeholder="Date"
-            />
-            <div class="xl:ml-[30px] md:ml-[30px]">
+    <!-- Featured Dishes area start-->
+    <div class="bg-[#F5F8FD] relative">
+      <!-- reserve table start -->
+      <div
+        class="xl:w-[1300px] w-full text-white xl:h-[375px] absolute xl:-top-[150px] -top-[200px] xl:left-[112px] xl:mx-0 mx-2 bg-[url(./images/reserve-table-img.jpg)] rounded-[30px]"
+      >
+        <div class="xl:px-[60px] px-5 xl:pt-[70px] pt-5 xl:flex">
+          <div class="xl:w-[373.33px] mr-[30px]">
+            <h4 class="xl:text-[50px] text-4xl uppercase leading-[50px]">
+              Reserve a Table
+            </h4>
+            <div
+              class="border-b-[3px] border-[#FFD40D] mt-[9px] xl:w-[211px] w-[300px]"
+            ></div>
+            <p class="text-[18px] pt-[29px]">Discover our New Menu !</p>
+          </div>
+          <div class="xl:w-[776.66px] xl:pt-0 pt-6">
+            <div class="xl:flex md:flex">
               <input
-                class="xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
+                class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mr-[30px] text-black xl:mb-0 mb-[30px]"
                 type="text"
                 name="text"
                 id=""
-                placeholder="Time"
+                placeholder="No of Guest"
+              />
+
+              <input
+                type="text"
+                class="input xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] text-black xl:mb-0 mb-[30px]"
+                placeholder="Date"
+              />
+              <div class="xl:ml-[30px] md:ml-[30px]">
+                <input
+                  class="xl:w-[171.66px] md:w-[171.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
+                  type="text"
+                  name="text"
+                  id=""
+                  placeholder="Time"
+                />
+              </div>
+            </div>
+            <div class="xl:flex md:flex xl:pt-[30px] md:pt-0 pt-[30px]">
+              <input
+                class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mb-[30px] xl:mb-0 mr-[30px] text-black"
+                type="text"
+                name="text"
+                id=""
+                placeholder="Full Name"
+              />
+              <input
+                class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
+                type="text"
+                name="text"
+                id=""
+                placeholder="Phone No"
               />
             </div>
+            <div class="pt-[30px] xl:ml-[580px] xl:mb-0 xl:pb-0 pb-10">
+              <div class="relative">
+                <button
+                  class="bg-[#FFD40D] text-[18px] rounded-xl w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300"
+                >
+                  See Our Menus
+                  <a
+                    href="#"
+                    class="absolute border-[3px] z-0 rounded-xl border-[#FFD40D] w-[180.41px] h-[68.19px] left-[16.5px] right-0 -top-[6px]"
+                  ></a>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="xl:flex md:flex xl:pt-[30px] md:pt-0 pt-[30px]">
-            <input
-              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] mb-[30px] xl:mb-0 mr-[30px] text-black"
-              type="text"
-              name="text"
-              id=""
-              placeholder="Full Name"
-            />
-            <input
-              class="xl:w-[373.33px] md:w-[373.33px] w-full h-[60px] pl-[30px] rounded-[7px] text-black"
-              type="text"
-              name="text"
-              id=""
-              placeholder="Phone No"
-            />
-          </div>
-          <div class="pt-[30px] xl:ml-[580px] xl:mb-0 xl:pb-0 pb-10">
-            <div class="relative">
-              <button
-                class="bg-[#FFD40D] text-[18px] rounded-xl w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300"
-              >
-                See Our Menus
-                <a
-                  href="#"
-                  class="absolute border-[3px] z-0 rounded-xl border-[#FFD40D] w-[180.41px] h-[68.19px] left-[16.5px] right-0 -top-[6px]"
-                ></a>
-              </button>
+        </div>
+      </div>
+      <!-- reserve table end -->
+      <div class="pt-[290px] xl:w-[1300px] xl:mt-0 mt-52 mx-auto">
+        <div class="text-center pb-[90px]">
+          <h2 class="xl:text-6xl text-4xl">Featured Dishes</h2>
+          <div
+            class="border-b-[10px] my-[9px] border-[#FFD40D] w-[270px] mx-auto"
+          ></div>
+        </div>
+        <div class="xl:pt-0 pt-24 pb-20">
+          <div>
+            <div class="swiper dishes">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide xl:px-0 px-5">
+                  <div
+                    class="border-[5px] relative border-[#FFD40D] rounded-[30px] xl:w-[413.33px] h-[459.16px] pt-5 px-5"
+                  >
+                    <img
+                      class="w-[333.33px] h-[298.5px] mx-auto"
+                      src="images/dish1.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5 class="text-xl">Crispy Fried Chicken</h5>
+                      <div class="flex items-center text-[#555555]">
+                        <del class="text-[18px] pr-[6px]">$14.85</del>
+                        <p class="text-[28px]">
+                          <span class="text-[#F3274C]">$</span>10.85
+                        </p>
+                      </div>
+                      <div
+                        class="bg-[#FFD40D] w-[70px] h-[70px] rounded-[35px] absolute items-center flex justify-center top-[15px] left-[15px]"
+                      >
+                        <p class="text-[18px] uppercase">Sale</p>
+                      </div>
+                      <a
+                        class="absolute left-[333.33px] top-[389.15px]"
+                        href="#"
+                      >
+                        <div
+                          class="bg-[#FFD40D] w-[50px] h-[50px] rounded-[7px] flex items-center justify-center"
+                        >
+                          <i class="fa-solid fa-lock"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="border-[5px] relative border-[#FFD40D] rounded-[30px] w-[413.33px] h-[459.16px] pt-5 px-5"
+                  >
+                    <img
+                      class="w-[333.33px] h-[298.5px] mx-auto"
+                      src="images/dish2.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5 class="text-xl">Shroom Bacon Burger</h5>
+                      <div class="flex items-center text-[#555555]">
+                        <del class="text-[18px] pr-[6px]">$21.76</del>
+                        <p class="text-[28px]">
+                          <span class="text-[#F3274C]">$</span>11.86
+                        </p>
+                      </div>
+                      <div
+                        class="bg-[#FFD40D] w-[70px] h-[70px] rounded-[35px] absolute items-center flex justify-center top-[15px] left-[15px]"
+                      >
+                        <p class="text-[18px] uppercase">Sale</p>
+                      </div>
+                      <a
+                        class="absolute left-[333.33px] top-[389.15px]"
+                        href="#"
+                      >
+                        <div
+                          class="bg-[#FFD40D] w-[50px] h-[50px] rounded-[7px] flex items-center justify-center"
+                        >
+                          <i class="fa-solid fa-lock"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="border-[5px] relative border-[#FFD40D] rounded-[30px] w-[413.33px] h-[459.16px] pt-5 px-5"
+                  >
+                    <img
+                      class="w-[333.33px] h-[298.5px] mx-auto"
+                      src="images/dish3.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5 class="text-xl">Delicious Black Coffee</h5>
+                      <div class="flex items-center text-[#555555]">
+                        <del class="text-[18px] pr-[6px]">$14.85</del>
+                        <p class="text-[28px]">
+                          <span class="text-[#F3274C]">$</span>10.85
+                        </p>
+                      </div>
+                      <div
+                        class="bg-[#FFD40D] w-[70px] h-[70px] rounded-[35px] absolute items-center flex justify-center top-[15px] left-[15px]"
+                      >
+                        <p class="text-[18px] uppercase">Sale</p>
+                      </div>
+                      <a
+                        class="absolute left-[333.33px] top-[389.15px]"
+                        href="#"
+                      >
+                        <div
+                          class="bg-[#FFD40D] w-[50px] h-[50px] rounded-[7px] flex items-center justify-center"
+                        >
+                          <i class="fa-solid fa-lock"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="border-[5px] relative border-[#FFD40D] rounded-[30px] w-[413.33px] h-[459.16px] pt-5 px-5"
+                  >
+                    <img
+                      class="w-[333.33px] h-[298.5px] mx-auto"
+                      src="images/dish2.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5 class="text-xl">Crispy Fried Chicken</h5>
+                      <div class="flex items-center text-[#555555]">
+                        <del class="text-[18px] pr-[6px]">$14.85</del>
+                        <p class="text-[28px]">
+                          <span class="text-[#F3274C]">$</span>10.85
+                        </p>
+                      </div>
+                      <div
+                        class="bg-[#FFD40D] w-[70px] h-[70px] rounded-[35px] absolute items-center flex justify-center top-[15px] left-[15px]"
+                      >
+                        <p class="text-[18px] uppercase">Sale</p>
+                      </div>
+                      <a
+                        class="absolute left-[333.33px] top-[389.15px]"
+                        href="#"
+                      >
+                        <div
+                          class="bg-[#FFD40D] w-[50px] h-[50px] rounded-[7px] flex items-center justify-center"
+                        >
+                          <i class="fa-solid fa-lock"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination mt-10"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- reserve table end -->
-    <!-- Featured Dishes area start-->
     <!-- Featured Dishes area end-->
+    <!-- testimonial  area start -->
+    <div class="xl:w-[1330px] mx-auto pt-[120px] xl:px-0 px-5 mb-[15px]">
+      <div class="grid xl:grid-cols-2 grid-cols-1 gap-[55px]">
+        <div>
+          <p class="text-[#F3274C] text-[18px] uppercase pb-1">
+            Testimonials & Reviews
+          </p>
+          <h2 class="xl:text-6xl text-4xl !leading-[72px] pb-[35px]">
+            Our Customar Feedbacks
+          </h2>
+          <div class="swiper testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="border-[#FFD40D] relative border-[5px] xl:px-[55px] px-5 py-[50px] rounded-[35px] xl:w-[610px] xl:h-[316px]"
+                >
+                  <p class="">
+                    A good restaurant is like a vacation; it transports you, and
+                    it becomes a lot more than just about the food.
+                  </p>
+                  <p class="pb-[25px]">
+                    All great deeds and all great thoughts
+                  </p>
+                  <h5 class="text-[26px]">Bratlee Hamint</h5>
+                  <div
+                    class="w-[75px] h-[75px] bg-[#FFD40D] rounded-full absolute top-[226px] left-[520px]"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="border-[#FFD40D] relative border-[5px] xl:px-[55px] px-5 py-[50px] rounded-[35px] xl:w-[610px] xl:h-[316px]"
+                >
+                  <p class="">
+                    A good restaurant is like a vacation; it transports you, and
+                    it becomes a lot more than just about the food.
+                  </p>
+                  <p class="pb-[25px]">
+                    All great deeds and all great thoughts
+                  </p>
+                  <h5 class="text-[26px]">Bratlee Hamint</h5>
+                  <div
+                    class="w-[75px] h-[75px] bg-[#FFD40D] rounded-full absolute top-[226px] left-[520px]"
+                  ></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="border-[#FFD40D] relative border-[5px] xl:px-[55px] px-5 py-[50px] rounded-[35px] xl:w-[610px] xl:h-[316px]"
+                >
+                  <p class="">
+                    A good restaurant is like a vacation; it transports you, and
+                    it becomes a lot more than just about the food.
+                  </p>
+                  <p class="pb-[25px]">
+                    All great deeds and all great thoughts
+                  </p>
+                  <h5 class="text-[26px]">Bratlee Hamint</h5>
+                  <div
+                    class="w-[75px] h-[75px] bg-[#FFD40D] rounded-full absolute top-[226px] left-[520px]"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination mt-10"></div>
+          </div>
+        </div>
+        <div class="relative xl:block hidden">
+          <a class="absolute top-[242px]" href="#">
+            <div
+              class="relative bg-[url(/images/testimonial1.png)] rounded-[30px] w-[292px] h-[292px]"
+            >
+              <div
+                class="absolute inset-0 hover:bg-[#f3274ca3] rounded-[30px] transition-all duration-300"
+              ></div>
+            </div>
+          </a>
+          <a class="absolute top-[15px] right-[135px]" href="#">
+            <div
+              class="relative bg-[url(/images/testimonial2.png)] rounded-[30px] w-[292px] h-[292px]"
+            >
+              <div
+                class="absolute inset-0 hover:bg-[#f3274ca3] rounded-[30px] transition-all duration-300"
+              ></div>
+            </div>
+          </a>
+          <a class="absolute top-[328px] right-[15px]" href="#">
+            <div
+              class="relative bg-[url(/images/testimonial3.png)] rounded-[30px] w-[292px] h-[292px]"
+            >
+              <div
+                class="absolute inset-0 hover:bg-[#f3274ca3] rounded-[30px] transition-all duration-300"
+              ></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial  area end -->
+    <!-- team area start -->
+    <div class="xl:w-[1330px] mx-auto pt-[85px] pb-[171px]">
+      <div class="text-center pb-[90px]">
+        <h2 class="xl:text-6xl text-4xl">Meet Our Experts</h2>
+        <div
+          class="border-b-[10px] my-[9px] border-[#FFD40D] w-[270px] mx-auto"
+        ></div>
+      </div>
+      <div
+        class="grid xl:grid-cols-3 grid-cols-1 gap-[30px] xl:px-0 px-5 xl:mx-0 mx-auto"
+      >
+        <div class="relative xl:mb-0 mb-56">
+          <img class="w-[413px]" src="images/team1.png" alt="" />
+          <div
+            class="absolute top-[364px] left-4 bg-white border-[5px] border-[#E4E4E4] w-[380px] h-[380px] rounded-full flex items-center justify-center"
+          >
+            <div class="text-center">
+              <p class="text-[18px] text-[#F3274C]">Dessert specialist</p>
+              <h5 class="text-[35px] pb-6">Thomas Walim</h5>
+              <div class="flex gap-x-[11px] justify-center">
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+              </div>
+              <img
+                class="mx-auto mt-[18px]"
+                src="images/signeture1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="relative xl:mb-0 mb-56">
+          <img class="w-[413px]" src="images/team2.png" alt="" />
+          <div
+            class="absolute top-[364px] left-4 bg-white border-[5px] border-[#E4E4E4] w-[380px] h-[380px] rounded-full flex items-center justify-center"
+          >
+            <div class="text-center">
+              <p class="text-[18px] text-[#F3274C]">Dessert specialist</p>
+              <h5 class="text-[35px] pb-6">James Jhonson</h5>
+              <div class="flex gap-x-[11px] justify-center">
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+              </div>
+              <img
+                class="mx-auto mt-[18px]"
+                src="images/signeture2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-[413px]" src="images/team3.png" alt="" />
+          <div
+            class="absolute top-[364px] left-4 bg-white border-[5px] border-[#E4E4E4] w-[380px] h-[380px] rounded-full flex items-center justify-center"
+          >
+            <div class="text-center">
+              <p class="text-[18px] text-[#F3274C]">Dessert specialist</p>
+              <h5 class="text-[35px] pb-6">Room Minal</h5>
+              <div class="flex gap-x-[11px] justify-center">
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+                <div class="bg-[#F5F8FD] w-[50px] h-[50px] rounded-full"></div>
+              </div>
+              <img
+                class="mx-auto mt-[18px]"
+                src="images/signeture3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- team area end -->
+    <!-- food order area start -->
+    <div
+      class="bg-[url(/images/food-order-bg.jpg)] xl:h-[602px] bg-no-repeat bg-cover mt-40 relative"
+    >
+      <div class="mx-auto py-[100px] xl:w-[1330px] w-full xl:px-0 px-5">
+        <div class="grid grid-cols-2 gap-[43px]">
+          <div class="w-[596px]">
+            <p class="text-[#F3274C] uppercase text-[18px] pb-1">
+              Best App For Foods Ordering
+            </p>
+            <h2 class="xl:text-6xl text-4xl !leading-[60px]">
+              Manage Your Restaurant Anytime! Anywhere!
+            </h2>
+            <ul class="pt-6">
+              <li class="text-[#555555] text-[18px] mb-2">
+                <i class="fa-solid fa-circle-dot text-[#FFD40D] mr-3"></i>
+                Higher Reach - Minimal Effort
+              </li>
+              <li class="text-[#555555] text-[18px] mb-2">
+                <i class="fa-solid fa-circle-dot text-[#FFD40D] mr-3"></i>
+                Showcase your Brand
+              </li>
+              <li class="text-[#555555] text-[18px] mb-2">
+                <i class="fa-solid fa-circle-dot text-[#FFD40D] mr-3"></i
+                >Exclusive offers & discounts
+              </li>
+            </ul>
+            <div class="pt-10">
+              <button
+                class="bg-[#F3274C] w-[201px] h-[60px] text-white rounded-xl text-[18px] mr-5"
+              >
+                <i class="fa-brands fa-google-play"></i>
+                Google Play
+              </button>
+              <button
+                class="bg-[#F3274C] w-[201px] h-[60px] text-white rounded-xl text-[18px]"
+              >
+                <i class="fa-brands fa-apple"></i>
+                App Store
+              </button>
+            </div>
+          </div>
+          <div class="absolute top-[180px] left-[655px]">
+            <img src="images/delivery.png" alt="" />
+          </div>
+          <div class="absolute top-[115px] left-[872px]">
+            <img class="w-[400px]" src="images/phone.png" alt="" />
+          </div>
+          <div class="absolute left-[1121px] top-[60px]">
+            <img src="images/food01.png" alt="" />
+          </div>
+          <div class="absolute left-[1240px] bottom-[120px]">
+            <img src="images/food02.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- food order area start -->
+    <!-- blog area start -->
+    <div class="w-[1330px] mx-auto pt-[85px] xl:px-0 px-5">
+      <div class="xl:text-center pb-[90px]">
+        <h2 class="xl:text-6xl text-4xl">Recent News</h2>
+        <div
+          class="border-b-[10px] my-[9px] border-[#FFD40D] w-[270px] xl:mx-auto"
+        ></div>
+      </div>
+      <div class="grid xl:grid-cols-2 grid-cols-1 gap-[30px]">
+        <div class="xl:flex items-center">
+          <img
+            class="w-[260px] h-[275px] rounded-[30px]"
+            src="images/blog1.png"
+            alt=""
+          />
+          <div class="xl:pl-10 xl:pt-0 pt-5">
+            <p
+              class="w-[111px] h-[29px] rounded-[7px] bg-[#FFD40D] text-[15px] flex justify-center items-center"
+            >
+              April 06, 2025
+            </p>
+            <h4 class="text-3xl pt-[13px]">Creamy Chicken Alfredo</h4>
+            <div class="flex pt-5 items-center">
+              <img
+                class="w-[55px] h-[55px] rounded-full"
+                src="images/woman1.jpg"
+                alt=""
+              />
+              <h5 class="text-[16px] pl-[15px]">Willimes Thomas</h5>
+            </div>
+          </div>
+        </div>
+        <div class="xl:flex items-center">
+          <img
+            class="w-[260px] h-[275px] rounded-[30px]"
+            src="images/blog2.png"
+            alt=""
+          />
+          <div class="xl:pl-10 xl:pt-0 pt-5">
+            <p
+              class="w-[111px] h-[29px] rounded-[7px] bg-[#FFD40D] text-[15px] flex justify-center items-center"
+            >
+              April 06, 2025
+            </p>
+            <h4 class="text-3xl pt-[13px]">Air Fryer Salmon</h4>
+            <div class="flex pt-5 items-center">
+              <img
+                class="w-[55px] h-[55px] rounded-full"
+                src="images/woman1.jpg"
+                alt=""
+              />
+              <h5 class="text-[16px] pl-[15px]">Willimes Thomas</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog area end -->
+    <!--  -->
+    <div class="pb-[216px]">
+      <div
+        class="bg-[url(/images/001.jpg)] bg-no-repeat bg-cover relative h-[574px] mt-[120px] mx-auto"
+      >
+        <div
+          class="absolute inset-0 bg-[#FFFFFFCC] rounded-[30px] transition-all duration-300"
+        ></div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- footer area start -->
+    <div class="bg-[#F5F8FD] py-[100px] relative">
+      <div class="w-[1300px] mx-auto">
+        <div class="xl:flex">
+          <div
+            class="bg-[#F3274C] w-[390px] h-[364px] rounded-[30px] text-white"
+          >
+            <div class="pl-[45px] pt-10">
+              <h6 class="text-2xl fugaz">pizza hut</h6>
+              <p class="text-[10px] pl-4 fugaz">FOOD & RESTAURANT</p>
+              <p class="text-[16px] pt-14">
+                Tuesday – Saturday: 12:00pm – 23:00pm
+              </p>
+              <p class="pt-3">Closed on Sunday</p>
+              <p class="pt-[95px]">5 star rated on TripAdvisor</p>
+            </div>
+          </div>
+          <div class="w-[198px] ml-[47px] pt-[30px]">
+            <h5 class="text-[26px]">About</h5>
+            <div
+              class="border-b-[10px] my-[9px] border-[#FFD40D] w-[78px]"
+            ></div>
+            <ul class="pt-[47px]">
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i> Fredoka One</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i> Special Dish</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Reservation</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-[227px] ml-[33px] pt-[30px]">
+            <h5 class="text-[26px]">Menu</h5>
+            <div
+              class="border-b-[10px] my-[9px] border-[#FFD40D] w-[78px]"
+            ></div>
+            <ul class="pt-[47px]">
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Steaks</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i> Burgers</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Coctails</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Bar B Q</a
+                >
+              </li>
+              <li class="pb-3">
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mr-2"></i>Desserts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-[360px] pt-[30px] ml-[30px]">
+            <h5 class="text-[26px] pb-[47px]">Newsletter</h5>
+            <p class="pb-[15px]">Get recent news and updates.</p>
+            <input
+              class="h-[63px] w-[360px] pl-[36px] rounded-[10px] border-[1px] border-[#DEDEDE]"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email Address"
+            />
+            <div class="pt-5">
+              <div class="relative">
+                <button
+                  class="bg-[#F3274C] text-[18px] rounded-xl text-white w-[189.91px] h-[55px] cursor-pointer hover:w-[180.41px] hover:ml-4 z-10 transition-all duration-300"
+                >
+                  Subscribe
+                  <a
+                    href="#"
+                    class="absolute border-[3px] z-0 rounded-xl border-[#F3274C] w-[180.41px] h-[68.19px] left-[16.5px] right-0 -top-[6px]"
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t-[10px] border-[#FFD40D] mt-[100px]">
+          <div class="xl:flex justify-between mt-10">
+            <div>
+              <a class="text-[#F3274C] fugaz" href="#">© 2024 Pizza hut</a>
+              <span> | All shawonetc3 Themes.</span>
+            </div>
+            <a class="underline" href="#"> Facebook</a>
+            <a class="underline" href="#"> Instagram</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="absolute -left-[60px] top-[47px]">
+        <img src="images/footer-img1.png" alt="" />
+      </div> -->
+    </div>
+    <!-- footer area start -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
